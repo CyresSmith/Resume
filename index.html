@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,161 +8,208 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="syles/styles.css">
-    <title>Front-End | Ivan Reshetnikov</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <title>Веб розробник | Іван Решетніков</title>
   </head>
 
   <body>
 
     <!--main-->
-    <div class="main">
+    <div id="top" class="main">
       <!--main content-->
       <div class="maincontent">
+        <!-- select lang -->
+
+    <select class="change-lang">
+      <option value="ua">UA</option>
+      <option value="en">EN</option>
+    </select>
+
+    <a href="#top" class="scroll-up-btn scroll-up-btn--remove"> <svg class="scroll-up-btn__icon" width="30" height="30"> <use href="./img/symbol-defs.svg#Vector"></use></svg> </a>
+    
         <!--About user-->
-        <div class="About">
-          <h2 class="about_position">Front-End Developer</h2>
-          <h1 class="about_name">Іван Решетніков</h1>
-          <p class="about_description">
+        <div class="about">
+          <h2 class="about__position lng-work-position">Full Stack Розробник</h2>
+          <h1 class="about__name lng-name">Іван Решетніков</h1>
+          <p class="about__description lng-description">
             Мої вітання! Я саме той розробник, якого ти шукаєш.
             Мої роботи поєднують у собі все найкраще, що є у сфері розробки:
           </p>
-            <ul class="work_list">
-              <li class="worklist_item">Виняткова естетика.
-              </li> 
-              <li class="worklist_item">Новітні технології.              
-              </li>
-              <li class="worklist_item">Неймовірно дружній функціонал.
-              </li>
-            </ul>
             <p class="organization">
-              <span class="work_position">P.S.</span> Обіцяю, в процессі розробки не постраждає жодна тваринка
+              <span class="work__position">P.S.</span> <span class="lng-position">Обіцяю, в процессі розробки не постраждає жодна тваринка</span>
             </p>
             
           
         </div>
         <!--Projects-->
-        <div class="Projects">
-          <h3 class="title">Projects</h3>
-          <ol class="projects_list">
-            <li class="projects_item">
-              <span class="projects_text"><a href="https://hellenglish.goit.global/" class="project_link"
-                >https://hellenglish.goit.global/</a
-              >
-              .................... <span class="project_bracket">[</span> HTML5, CSS3 <span class="project_bracket">]</span></span>            
-             </li>
-            <li class="projects_item">
-              <span class="projects_text"><a href="https://cryptohub.goit.global/" class="project_link"
-                >https://cryptohub.goit.global/</a
-              >
-              ...................... <span class="project_bracket">[</span> JavaScript <span class="project_bracket">]</span></span>              
+        <div class="projects">
+          <h3 class="title lng-projects-title">Projects</h3>
+          <ol class="projects__list">
+
+            <li class="projects__item">
+              <span class="projects__text">
+                <a href="https://cyressmith.github.io/goit-markup-hw-08/" class="project__link" rel="noopener noreferrer nofollow"
+                target="_blank"> <b>Web Studio</b> https://cyressmith.github.io/goit-markup-hw-08/
+                </a>
+              ........... <span class="project__bracket">[</span> HTML5, CSS3, SASS <span class="project__bracket">]</span></span>            
+             <p class="projects__description lng-studio__description">Role: Front End Developer. A website with a responsive layout.</p>             
             </li>
-            <li class="projects_item">
-              <span class="projects_text"><a href="https://kidslike.goit.global/" class="project_link"
-                >https://kidslike.goit.global/</a
-              >
-              ............................ <span class="project_bracket">[</span> React.js, Node.js <span class="project_bracket">]</span></span>              
+            
+            <li class="projects__item">
+              <span class="projects__text">
+                <a href="https://viacheslavyur.github.io/Ice-cream/" class="project__link" rel="noopener noreferrer nofollow"
+                target="_blank"><b>Ice-cream</b> https://viacheslavyur.github.io/Ice-cream/
+                </a>
+              ........... <span class="project__bracket">[</span>HTML5, CSS3, JS, SASS, GIT <span class="project__bracket">]</span></span>              
+            <p class="projects__description lng-ice-cream__description">Role: Scrum Master. A website with a responsive layout.</p>
+            <p class="projects__description lng-ice-cream__description-2">Build project on github.</p>
             </li>
+            
           </ol>
         </div>
         <!--Work Experience-->
-        <div class="Work">
-          <h3 class="title">Досвід работи</h3>
+        <div class="work">
+          <h3 class="title lng-work-title">Досвід работи</h3>
+          
           <!--Company_1-->
           <div>
-            <h4 class="work_position">Front-End Developer <span class="organization">Freelance</span></h4>
-            <p class="work_time">Червень 2022 - up to now <span class="line">|</span> Україна</p>
-            <ul class="work_list">
-              <li class="worklist_item">
-                Розробка сайтів Landing page з унікальним дізайном, основною метою якого
-                є презентація новогу продукту та підвищення його продаж.
+            <h4 class="work__position lng-work-position-1">Інженер-конструктор </h4>
+            <h5 class="organization lng-work-organization-1">ТОВ "УСПІХ-ПЛЮС 2012"</h5>
+            <p class="work__time lng-work-time-1">Березень 2017  - до початку війни | Україна, Мелітополь</p>
+            <ul class="work__list">
+              <li class="worklist__item lng-work-item-1-1">
+                Розробка конвеєрного обладнання.
               </li>
-              <li class="worklist_item">
-                Розробка сайтів-візіток які презентують компанію,
-                найчастіше мають 1-3 сторінки де растошовано її опис, блок з контактами та форму зворотнього зв’язку.</li>
-              <li class="worklist_item">
-                Розробка інтернет магазинів з можливістю створення категорій і карток товарів,
-                додавання методів оплати, зручною корзиною, експортом та імпортом даних.</li>
-              <li class="worklist_item">
-                Розробка корпоративних сайтів для Вашої компанії з можливістю публікації новин, цін,
-                презентацій та іншої корпоративної інформації.
+              <li class="worklist__item lng-work-item-1-2">
+                Розробка нових типів виробів.
+              </li>
+              <li class="worklist__item lng-work-item-1-3">
+                Розробка конструкторської документації.
+              </li>
+              <li class="worklist__item lng-work-item-1-4">Керування виробництвом транспортуючого обладнання та інших виробів.
               </li>
             </ul>
           </div>
           <!--Company_2-->
           <div>
-            <h4 class="work_position">Інженер-конструктор <span class="organization">ТОВ "УСПІХ-ПЛЮС 2012"</span></h4>
-            <p class="work_time">Березень 2017 - before the start of the war <span class="line">|</span> Україна, Мелітополь</p>
-            <ul class="work_list">
-              <li class="worklist_item">
-                Розробка конвеєрного обладнання.
-              </li>
-              <li class="worklist_item">
-                Розробка нових типів виробів.
-              </li>
-              <li class="worklist_item">
-                Розробка конструкторської документації.
-              </li>
-              <li class="worklist_item">Виготовлення транспортуючого обладнання та інших виробів.
-              </li>
-            </ul>
-          </div>
-          <!--Company_3-->
-          <div>
-            <h4 class="work_position">Художник-технолог <span class="organization">ТОВ "СТС 2007"</span></h4>
-            <p class="work_time">Квітень 2012 - Грудень 2016 <span class="line">|</span> Україна, Мелітополь</p>
-            <ul class="work_list">
-              <li class="worklist_item">Розробка нового дизайну.</li>
-              <li class="worklist_item">Підготовка зразків до серійного виробництва.</li>
-              <li class="worklist_item">Адаптація зображень для шовкотрафаретного друку.</li>
+            <h4 class="work__position lng-work-position-2">Художник-технолог</h4>
+            <h5 class="organization lng-work-organization-2">ТОВ "СТС 2007"</h5>            
+            <p class="work__time lng-work-time-2">Квітень 2012 - Грудень 2016 | Україна, Мелітополь</p>
+            <ul class="work__list">
+              <li class="worklist__item lng-work-item-2-1">Розробка нового дизайну.</li>
+              <li class="worklist__item lng-work-item-2-2">Підготовка зразків до серійного виробництва.</li>
+              <li class="worklist__item lng-work-item-2-3">Адаптація зображень для шовкотрафаретного друку.</li>
             </ul>
           </div>
         </div>
         <!--Education-->
-       <div class="Education">
-          <h3 class="title">Освіта</h3>
-          <h4 class="university">Мелітопольський державний педагогічний університет імені Богдана Хмельницького</h4>
-          <h5 class="profession">Природничо-географічний факультет</h3>
-          <p class="work_time">Вересень 2002 - Травень 2007  <span class="line">|</span> Україна, Мелітополь</p>            
+       <div class="education">
+        <h3 class="title lng-education">Освіта</h3>
+
+        <ul>
+          <li>            
+            <h4 class="university lng-university-1">IT школа GoIT</h4>
+            <h5 class="profession lng-profession-1">Full Stack Розробник</h3>
+            <p class="work__time lng-education-time-1">Червень 2022 | Онлайн</p></li>
+          <li>
+            <h4 class="university lng-university-2">Мелітопольський державний педагогічний університет імені Богдана Хмельницького</h4>
+            <h5 class="profession lng-profession-2">Природничо-географічний факультет</h3>
+            <p class="work__time lng-education-time-2">Вересень 2002 - Травень 2007 | Україна, Мелітополь</p>
+          </li>
+        </ul>
+                      
         </div>
       </div>
      <!--side bar-->
-     <aside class="sidebar"><img width="300" src="img/photo_2022-06-05_16-57-06.jpg" alt="user_photo" class="photo">
+     <aside class="sidebar"><img width="300" src="img/photo_2022-06-05_16-57-06.jpg" alt="user__photo" class="photo">
     <!--Contacts-->
     <div class="contacts">
-      <h3 class="sidebar_title">Контакти</h3>
+      <h3 class="sidebar__title lng-sidebar__title">Контакти</h3>
       <p>
-        <span class="contact_type">Call:</span>
-         <a href="tel:+380986560***" class="contact_link">+380 98 656 0 ***</a>
-        </p>
+        <span class="contact__type">Call:</span>
+        <a href="tel:+380986560225" class="contact__link">+380 98 656 02 25</a>
+      </p>
+
       <p>
-        <span class="contact_type">Mail:</span>
-         <a href="mailto:madnez***@gmail.com" class="contact_link">madnez***@gmail.com</a>
-        </p>
+        <span class="contact__type">Mail:</span>
+        <a href="mailto: ivan_reshetnikov@ukr.net" class="contact__link">ivan_reshetnikov@ukr.net</a>          
+      </p>
+
+      <p>
+        <span class="contact__type">Telegram:</span>
+        <a href="https://t.me/Cyres_Smith" class="contact__link" rel="noopener noreferrer nofollow" target="_blank">@Cyres_Smith</a>          
+      </p>
+
+      <p>
+        <span class="contact__type">WhatsApp:</span>        
+        <a href="https://wa.me/+380986560225" class="contact__link" rel="noopener noreferrer nofollow" target="_blank">Ivan Reshetnikov</a>
+      </p>
+
+      <p>
+        <span class="contact__type">Location:</span>        
+        <span class="contact__link">Zhytomyr, Ukraine (ready to move)</span>
+      </p>
       
     </div>
     <!--Tech_Skills-->
-    <div class="Tech_Skills">
-      <h3 class="sidebar_title">Tech Skills</h3>
-      <ul class="techskills_list">
-        <li class="techskills_item"> <span class="techskills_text">HTML5</span></li>
-        <li class="techskills_item"> <span class="techskills_text">CSS3</span></li>
-        <li class="techskills_item"> <span class="techskills_text">GIT</span></li>
-        <li class="techskills_item"> <span class="techskills_text">WebPack</span></li>
-        <li class="techskills_item"> <span class="techskills_text">JavaScript</span></li>
-        <li class="techskills_item"> <span class="techskills_text">React.js</span></li>
-        <li class="techskills_item"> <span class="techskills_text">Node.js</span></li>
+    <div class="skills">
+      <h3 class="sidebar__title">Tech Skills</h3>
+      <ul class="skills__list">
+        <li class="skills__item"> <span class="skills__text">HTML5</span></li>
+        <li class="skills__item"> <span class="skills__text">CSS3</span></li>
+        <li class="skills__item"> <span class="skills__text">SASS</span></li>
+        <li class="skills__item"> <span class="skills__text">Responsive/Adaptive design</span></li>
+        <li class="skills__item"> <span class="skills__text">GIT</span></li>
+        <li class="skills__item"> <span class="skills__text">WebPack</span></li>
+        <li class="skills__item"> <span class="skills__text">JavaScript</span></li>
+        <li class="skills__item"> <span class="skills__text">React.js</span></li>
+        <li class="skills__item"> <span class="skills__text">Node.js</span></li>
       </ul>
     </div>
     <!--Soft_Skills-->
-    <div class="Soft_Skills">
-      <h3 class="sidebar_title">Soft Skills</h3>
-      <ul class="softskills_list">
-        <li class="softskill_item"> <span class="softskill_text">Scrum</span></li>
-        <li class="softskill_item"> <span class="softskill_text">Agile</span></li>
-        <li class="softskill_item"> <span class="softskill_text">GTD</span></li>
-        <li class="softskill_item"> <span class="softskill_text">Teamwork</span></li>        
+    <div class="skills">
+      <h3 class="sidebar__title">Soft Skills</h3>
+      <ul class="skills__list">
+        <li class="skills__item"> <span class="skills__text">Scrum</span></li>
+        <li class="skills__item"> <span class="skills__text">Agile</span></li>
+        <li class="skills__item"> <span class="skills__text">GTD</span></li>
+        <li class="skills__item"> <span class="skills__text">Teamwork</span></li>
+        <li class="skills__item"> <span class="skills__text">Good communication</span></li>
+        <li class="skills__item"> <span class="skills__text">Attention to detail</span></li>
+        <li class="skills__item"> <span class="skills__text">Creativity</span></li>        
       </ul>
     </div>
+    <!--Extra_Skills-->
+    <div class="skills">
+      <h3 class="sidebar__title">Extra Skills</h3>
+      <ul class="skills__list">
+        <li class="skills__item"> <span class="skills__text">Adobe Photoshop</span></li>
+        <li class="skills__item"> <span class="skills__text">Adobe Illustrator</span></li>
+        <li class="skills__item"> <span class="skills__text">Adobe InDesign</span></li>
+        <li class="skills__item"> <span class="skills__text">CorelDraw</span></li>
+        <li class="skills__item"> <span class="skills__text">Figma</span></li>
+        <li class="skills__item"> <span class="skills__text">SolidWorks</span></li>
+        <li class="skills__item"> <span class="skills__text">Compas 3D</span></li>
+      </ul>
+    </div>
+    <!--LANGUAGES-->
+    <div class="skills">
+      <h3 class="sidebar__title">Languages</h3>
+      <ul class="skills__list">
+        <li class="skills__item"> <span class="skills__text">English - Upper-Intermediate</span></li>
+        <li class="skills__item"> <span class="skills__text">Ukrainian - Native</span></li>
+        <li class="skills__item"> <span class="skills__text">Russian - Native</span></li>
+      </ul>
+    </div>
+
      </aside>
     </div>
+    <script src="./js/langschange.js" type="module"></script>
+    <script src="./js/langs.js" type="module"></script>
+    <script src="./js/smoothscroll.js" type="module"></script>
+    <script src="./js/hide-scroll-up-button.js" type="module"></script>
   </body>
 </html>
